@@ -36,23 +36,43 @@
             <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
 
             <div class="service">
-                <p class="service-title">Инфраструктура</p>
-                <p class="service-option">Бассейн</p>
-                <p class="service-option">Парковка</p>
-                <p class="service-option">Wi-Fi</p>
+
+            <form class="filter-service" method="get" action="#">
+            <fieldset>
+              <legend>Инфраструктура</legend>
+              <ul>
+                <li class="filter-service-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked><label for="pool">Бассейн</li>
+                <li class="filter-service-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking"><label for="parking">Парковка</label></li>
+                <li class="filter-service-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Wi-Fi"><label for="Wi-Fi">Wi-Fi</label></li>
+              </ul>
+              </fieldset>
+              </form>
             </div>
 
             <div class="housetype">
-                <p class="housetype-title">Тип жилья</p>
-                <p class="housetype-option">Гостиница</p>
-                <p class="housetype-option">Мотель</p>
-                <p class="housetype-option">Апартаменты</p>
+
+                <form class="filter-housetype" method="get" action="#">
+                <fieldset>
+                <legend>Тип жилья</legend>
+                <ul>
+                    <li class="filter-housetype-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked><label for="hotel">Гостиница</li>
+                    <li class="filter-housetype-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked><label for="motel">Мотель</label></li>
+                    <li class="filter-housetype-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" checked><label for="apartment">Апартаменты</label></li>
+                </ul>
+                </fieldset>
+                </form>
+                </div>
+
             </div>
 
             <div class="houseprice">
-                <p class="houseprice-title">Стоимость в сутки</p>
-                <p>От 0 до 3000</p>
-                <p class="button">Показать</p>
+                <label for="houseprice">Стоимость в сутки</label>
+                <div>От 0</div> 
+                <div>до 3000</div>
+
+                0 <input type="range" min="0" max="3000"> 3000
+
+                <button type="submit" class="filter-houseprice-button button">Показать</button>
             </div>
 
             <section class="filters">
@@ -67,8 +87,9 @@
             </section>
 
             <section class="filters-sorting-direction">
-                <a class="up" href="#"></a>
-                <a class="down" href="#"></a>
+                <span class="button filters-sorting-direction filters-sorting-direction-up" type="button">Наверх</span>
+                <span class="button filters-sorting-direction filters-sorting-direction-down" type="button">Вниз</span>
+
             </section>
 
             <section class="catalog">
@@ -78,14 +99,17 @@
 
                     <li class="catalog-item">
 
-                        <div>
-                        <img src="img/hotel1.jpg" alt="hotel 1">
-                        </div>
+                        <a href="catalog-item.html">
 
+                        <div>
+                        <p class="catalog-item-image">
+                        <img src="img/hotel1.jpg" alt="hotel 1">
+                       </a>
+                        </p>
+                        </div>
 
                         <div>
                         <h3>
-                            <a href="catalog-item.html">
                                 <span class="catalog-title">Amara Resort &amp; Spa</span>
                             </a>
                         </h3>
@@ -99,6 +123,7 @@
                                 <a class="button" href="#">Забронировать</a>
                             </p>
                         </div>
+                    
 
                         <div>
                         <p>
@@ -113,16 +138,20 @@
                             <span class="catalog-item-rating">Рейтинг: 8,5</span>
                         </p>
                        </div>
+                    </a>
                     </li>
 
                     <li class="catalog-item">
+                        <a href="catalog-item.html">
+
                         <div>
+                            <p class="catalog-item-image">
                             <img src="img/hotel2.jpg" alt="hotel 2">
+                            </p>
                         </div>
 
                         <div>
                         <h3>
-                            <a href="catalog-item.html">
                                 <span class="catalog-title">Desert Quail Inn</span>
                             </a>
                         </h3>
@@ -148,11 +177,16 @@
                             <span class="catalog-item-rating">Рейтинг: 8,9</span>
                         </p>
                        </div>
+                    </a>
                     </li>
 
                     <li class="catalog-item">
+                        <a href="catalog-item.html">
+
                         <div>
+                            <p class="catalog-item-image">
                             <img src="img/hotel3.jpg" alt="hotel 3">
+                            </p>
                         </div>
 
                         <div>
@@ -182,6 +216,7 @@
                             <span class="catalog-item-rating">Рейтинг: 9,2</span>
                         </p>
                         </div>
+                        </a>
                     </li>
                 </ul>
             </section>

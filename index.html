@@ -145,14 +145,35 @@
 
     
     <section class="modal modal-form">
-      <h2>Поиск гостиницы в Седоне</h2>
-      <p>Дата заезда</p>
-      <p>Дата выезда</p>
-      <p>Взрослые</p>
-      <p>Дети</p>
-      <p>Найти</p>
+      
       <!-- Здесь будет форма -->
-      <span class="modal-close">#</span>
+      <form class="modal modal-form" method="get">
+        <h2>Поиск гостиницы в Седоне</h2>
+        <label for="date-visit">Дата заезда</label><input type="text" id="date-visit" name="date-visit" class="date-visit">
+
+        <label for="date-out">Дата выезда</label><input type="text" id="date-out" name="date-out" class="date-out">
+
+        <div class="half-width">
+        <label for="grownup">Взрослые</label>
+        <input>-
+        <input>2
+        <input>+
+
+        </div>
+
+        <div class="half-width">
+        <label for="children">Дети</label>
+        <input>-
+        <input>0
+        <input>+
+       
+        </div>
+
+        <button class="button" type="button">Найти</button>
+    </form>
+
+    <button class="modal-close" type="button">Закрыть</button>
+
     </section>
     
 
