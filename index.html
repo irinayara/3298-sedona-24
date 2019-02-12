@@ -13,10 +13,10 @@
       <header class="header">
         <nav class="menu menu-opened">
           <ul class="menu-list">
-            <li class="menu-item menu-item-active"><a href="#" class="menu-link menu-link-active">Информация</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Фото и видео</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Карта штата</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Гостиницы</a></li>
+            <li class="menu-item menu-item-active"><a href="#" class="menu-link menu-link-active">Информация</a></li><!--
+            --><li class="menu-item"><a href="#" class="menu-link">Фото и видео</a></li><!--
+            --><li class="menu-item"><a href="#" class="menu-link">Карта штата</a></li><!--
+            --><li class="menu-item"><a href="#" class="menu-link">Гостиницы</a></li>
 
           </ul>
         </nav>
@@ -25,7 +25,7 @@
           <div class="promoblock">
             <a class="promoblock-link">
               <picture>
-                <img src="img/logo.svg" alt="brand-promoblock" class="promoblock">
+                <img src="img/logo.png" alt="brand-promoblock" class="promoblock">
               </picture>
             </a>
           </div>
@@ -37,9 +37,9 @@
       </div>
     </header>
   </div>
-</div>
 
-     <main class="container">
+
+     <main>
       <h1 class="visually-hidden">Седона</h1>
       
       <section class="advantages">
@@ -118,25 +118,64 @@
       <div class="find-hotel">
         <h2 class="find-hotel-title">Заинтересовались?</h2>
         <p class="find-hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#" class="btn btn-find">Найти гостиницу</a>
       </div>
 
+      <section class="modal modal-form">
+      
+        <!-- Здесь будет форма -->
+        <form class="modal modal-form" method="get">
+          <h2 class="modal modal-form">Поиск гостиницы в Седоне</h2>
+          <div class="full-width">
+          <label for="date-visit">Дата заезда</label>
+          <input type="text" id="date-visit" name="date-visit" class="date-visit" value="24 апреля 2017">
+        </div>
+          
+  
+          <div class="full-width">
+          <label for="date-out">Дата выезда</label>
+          <input type="text" id="date-out" name="date-out" class="date-out" value="4 июля 2017">
+          </div>
+  
+          <div class="half-width">
+          <label for="grownup">Взрослые:</label>
+          <span class="minus"></span><!--
+          --><input type="text" value="2" class="grownup"><!--
+          --><span class="plus"></span>
+  
+          </div><!--
+  
+          --><div class="half-width">
+          <label for="children" class="children-label">Дети:</label>
+          <span class="minus"></span><!--
+          --><input type="text" value="0" class="children"><!--
+          --><span class="plus"></span>
+         
+          </div>
+  
+          <button class="button" type="button">Найти</button>
+
+          <button class="modal-close" type="button">Закрыть</button>
+
+      </form>
+
+      </section>
+
       <div class="map">
-        <div class="map-canvas"><img src="img/map.jpg" alt="#"></div>
+        <div class="map-canvas"><img src="img/map.jpg" alt="Карта" class="map"></div>
       </div>
       </main>
       
       <footer class="footer">
 
-        <div class="hashtag">#visitsedona</div>
+        <div class="hashtag">#visitsedona</div><!--
 
-        <div class="social-btns">
-          <a href="#" class="social-btn">Twitter</a>
-          <a href="#" class="social-btn">Facebook</a>
-          <a href="#" class="social-btn">YouTube</a>
-        </div>
+        --><div class="social-btns">
+          <a href="#" class="social-btn tw">Twitter</a>
+          <a href="#" class="social-btn fb">Facebook</a>
+          <a href="#" class="social-btn yt">YouTube</a>
+        </div><!--
 
-        <div class="copyright">
+        --><div class="copyright">
           <span class="copyright-done">Website by</span>
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link">htmlacademy.ru</a>
         </div>
@@ -144,39 +183,7 @@
       </footer>
 
     
-    <section class="modal modal-form">
-      
-      <!-- Здесь будет форма -->
-      <form class="modal modal-form" method="get">
-        <h2>Поиск гостиницы в Седоне</h2>
-        <label for="date-visit">Дата заезда</label><input type="text" id="date-visit" name="date-visit" class="date-visit">
-
-        <label for="date-out">Дата выезда</label><input type="text" id="date-out" name="date-out" class="date-out">
-
-        <div class="half-width">
-        <label for="grownup">Взрослые</label>
-        <input>-
-        <input>2
-        <input>+
-
-        </div>
-
-        <div class="half-width">
-        <label for="children">Дети</label>
-        <input>-
-        <input>0
-        <input>+
-       
-        </div>
-
-        <button class="button" type="button">Найти</button>
-    </form>
-
-    <button class="modal-close" type="button">Закрыть</button>
-
-    </section>
-    
-
+  </div>
   </body>
 </html>
 
