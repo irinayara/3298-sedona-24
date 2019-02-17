@@ -8,9 +8,7 @@
   <body>
     <div class="container">
 
-    <div class="wrapper">
-
-      <header class="header">
+      <header class="main-header">
         <nav class="menu menu-opened">
           <ul class="menu-list">
             <li class="menu-item menu-item-active"><a href="#" class="menu-link menu-link-active">Информация</a></li><!--
@@ -21,36 +19,34 @@
           </ul>
         </nav>
 
-        <div class="header-wrapper">
           <div class="promoblock">
             <a class="promoblock-link">
-              <picture>
                 <img src="img/logo.png" alt="brand-promoblock" class="promoblock">
-              </picture>
             </a>
           </div>
-        </div>
-    
-         
-        <div class="intro-index">
-        <!-- Здесь будет фоновая картинка и прозрачный текст на ней, а внизу ребристая маска-->
-      </div>
+        
     </header>
-  </div>
 
 
      <main>
       <h1 class="visually-hidden">Седона</h1>
+
+      <div class="intro-index">
+        <!-- Здесь будет фоновая картинка и прозрачный текст на ней, а внизу ребристая маска-->
+      </div>
       
       <section class="advantages">
         <div class="advantages-header">
           <h1 class="advantages-title">Cедона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
+      
+      </section>
+
 
         <div class="advantage advantage-blue advantage-first">
 
-          <b class="advantage-title">Настоящий городок</b>
+          <p class="advantage-title">Настоящий городок</p>
           <div class="advantage-number">– №1 –</div>
           <p class="advantage-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
 
@@ -80,6 +76,8 @@
           </div>
         
         </section>
+
+      <section>
 
         <div class="advantage-picture">
           <div class="advantage advantage-blue advantage-blue-right">
@@ -115,54 +113,54 @@
         </div>
       </section>
 
-      <div class="find-hotel">
+      <section class="find-hotel">
         <h2 class="find-hotel-title">Заинтересовались?</h2>
         <p class="find-hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      </div>
-
-      <section class="modal modal-form">
-      
-        <!-- Здесь будет форма -->
-        <form class="modal modal-form" method="get">
-          <h2 class="modal modal-form">Поиск гостиницы в Седоне</h2>
-          <div class="full-width">
-          <label for="date-visit">Дата заезда</label>
-          <input type="text" id="date-visit" name="date-visit" class="date-visit" value="24 апреля 2017">
-        </div>
-          
-  
-          <div class="full-width">
-          <label for="date-out">Дата выезда</label>
-          <input type="text" id="date-out" name="date-out" class="date-out" value="4 июля 2017">
-          </div>
-  
-          <div class="half-width">
-          <label for="grownup">Взрослые:</label>
-          <span class="minus"></span><!--
-          --><input type="text" value="2" class="grownup"><!--
-          --><span class="plus"></span>
-  
-          </div><!--
-  
-          --><div class="half-width">
-          <label for="children" class="children-label">Дети:</label>
-          <span class="minus"></span><!--
-          --><input type="text" value="0" class="children"><!--
-          --><span class="plus"></span>
-         
-          </div>
-  
-          <button class="button" type="button">Найти</button>
-
-          <button class="modal-close" type="button">Закрыть</button>
-
-      </form>
-
+        <a href="form.html">Поиск гостиницы в Седоне</a>
       </section>
 
-      <div class="map">
-        <div class="map-canvas"><img src="img/map.jpg" alt="Карта" class="map"></div>
-      </div>
+        <!--<div class="map-canvas"><img src="img/map.jpg" alt="Карта" class="map"></div>-->
+
+      <section class="map">
+    
+          <form class="map modal-form" method="post">
+            <div class="full-width">
+            <label for="date-visit">Дата заезда</label>
+            <input type="text" id="date-visit" name="date-visit" class="date-visit" value="24 апреля 2017">
+            <span class="icon-calendar"></span>
+          </div>
+            
+    
+            <div class="full-width">
+            <label for="date-out">Дата выезда</label>
+            <input type="text" id="date-out" name="date-out" class="date-out" value="4 июля 2017">            
+            <span class="icon-calendar"></span>
+            </div>
+    
+            <div class="grownup">
+
+            <label for="grownup">Взрослые:</label>
+            <span class="minus"></span><!--
+            --><input type="text" value="2" id="grownup"><!--
+            --><span class="plus"></span>
+    
+            </div><!--
+    
+            --><div class="children">
+
+            <label for="children">Дети:</label>
+            <span class="minus"></span><!--
+            --><input type="text" value="0" id="children"><!--
+            --><span class="plus"></span>
+            </div>
+    
+            <button class="button" type="button">Найти</button>
+
+           
+              
+        </form>
+        </section>
+
       </main>
       
       <footer class="footer">
@@ -180,10 +178,9 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link">htmlacademy.ru</a>
         </div>
 
-      </footer>
+         </footer>
 
-    
-  </div>
+    </div>
   </body>
 </html>
 
