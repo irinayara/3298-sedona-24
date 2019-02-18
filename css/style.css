@@ -29,6 +29,7 @@ a {
 .menu-item {
     text-transform: uppercase;
     vertical-align: top;
+    width: 265px;
     box-sizing: border-box;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -38,10 +39,12 @@ a {
     text-align: left;
 }
 .menu-item:nth-child(2) {
-    margin-right: 240px;
+    margin-right: 200px;
     text-align: center;
 }
-
+.menu-item:nth-child(3) {
+    text-align: center;
+}
 .menu-item:nth-child(4) {
     padding-right: 72px;
     text-align: right;
@@ -110,20 +113,25 @@ img.promoblock {
 .find-hotel-description {
     font-size: 14px;
 }
+
+
+
+
+
 .hashtag, 
 .social-btns,
 .copyright {
-    display: inline-block;
-    width: 400px;
-    text-align: center;
+    display: flex;
+    margin: auto;
     font-weight: bold;
     font-size: 21px;
     text-transform: uppercase;
-    vertical-align: top;
+    width: 33%;
+    justify-content: center;
 
 }
 .social-btn {
-    display: inline-block;
+    display: flex;
     width: 40px;
     height: 40px;
     overflow: hidden;
@@ -131,9 +139,12 @@ img.promoblock {
 }
 .tw {
 background: url("../img/t.png") center center no-repeat #81b3d1;
+margin-right: 5px;
+
 }
 .fb {
     background: url("../img/fb-icon.png") center center no-repeat #81b3d1;
+    margin-right: 5px;
 
 }
 .yt {
@@ -142,10 +153,19 @@ background: url("../img/t.png") center center no-repeat #81b3d1;
 }
 
 footer {
-    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+}
+.copyright {
+    align-items: center;
 }
 .copyright-done {
     font-size: 14px;
+    padding-right: 5px;
 }
 .copyright-link {
     background: url("../img/logo-name.png") top left no-repeat;
@@ -153,8 +173,7 @@ footer {
     height: 41px;
     overflow: hidden;
     text-indent: -9999px;
-    display: inline-block;
-    vertical-align: middle;
+
 }
 
 
@@ -316,7 +335,6 @@ input {
     width: 346px;
     border: 2px solid #f2f2f2;
     background-color: #f2f2f2;
-    display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
     text-align: left;
