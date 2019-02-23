@@ -19,6 +19,7 @@ a {
     text-decoration: none;
 }
 
+
 .menu-list {
     display: flex;
     margin: 0;
@@ -39,10 +40,11 @@ a {
     text-align: left;
 }
 .menu-item:nth-child(2) {
-    margin-right: 200px;
+    margin-right: 239px;
     text-align: center;
 }
 .menu-item:nth-child(3) {
+    margin-left: 29px;
     text-align: center;
 }
 .menu-item:nth-child(4) {
@@ -65,7 +67,7 @@ img.promoblock {
 
 }
 .intro-index {
-    background: url("../img/polygon.png") center bottom no-repeat, url("../img/welcome.png") center center no-repeat, url("../img/background-photo.jpg") center top no-repeat;
+    background: url("../img/mask.png") center bottom no-repeat, url("../img/welcome.png") center center no-repeat, url("../img/background-photo.jpg") center top no-repeat;
     height: 510px;
 }
 .visually-hidden {
@@ -82,6 +84,7 @@ img.promoblock {
 .advantages-title {
     font-weight: bold;
     font-size: 21px;
+    width: 500px;
 }
 .advantages-description {
     margin-top: 30px;
@@ -105,6 +108,7 @@ img.promoblock {
     font-weight: normal;
     font-size: 21px;
     line-height: 26px;
+    margin-top: 31px;
 }
 .find-hotel-title {
     font-weight: bold;
@@ -112,8 +116,12 @@ img.promoblock {
 }
 .find-hotel-description {
     font-size: 14px;
-}
+    line-height: 1.5;
 
+}
+.find-hotel__shift {
+    display: block;
+}
 
 
 
@@ -134,21 +142,57 @@ img.promoblock {
     display: flex;
     width: 40px;
     height: 40px;
-    overflow: hidden;
-    text-indent: -9999px;
-}
-.tw {
-background: url("../img/t.png") center center no-repeat #81b3d1;
-margin-right: 5px;
+    background: #81b3d1;
 
 }
-.fb {
-    background: url("../img/fb-icon.png") center center no-repeat #81b3d1;
+.social-btn:hover {
+    background: #669dc0;
+}
+.social-btn:active {
+    background: #5495bd;
+}
+.social-btn span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    text-indent: -9999px;
+
+}
+.tw {
     margin-right: 5px;
 
 }
-.yt {
-    background: url("../img/youtube.png") center center no-repeat #81b3d1;
+.tw span {
+    -webkit-mask: url("../img/t.svg") center center no-repeat;
+    mask: url("../img/t.svg") center center no-repeat;
+    background: white;
+}
+.tw:active span {
+    background: #88b5d1;
+
+}
+.fb {
+    margin-right: 5px;
+
+}
+.fb span {
+    -webkit-mask: url("../img/fb-icon.svg") center center no-repeat;
+    mask: url("../img/t.svg") center center no-repeat;
+    background: white;
+
+}
+.fb:active span {
+    background: #88b5d1;
+
+}
+.yt span {
+    -webkit-mask: url("../img/youtube.svg") center center no-repeat;
+    mask: url("../img/t.svg") center center no-repeat;
+    background: white;
+}
+.yt:active span {
+    background: #88b5d1;
 
 }
 
@@ -168,16 +212,22 @@ footer {
     padding-right: 5px;
 }
 .copyright-link {
-    background: url("../img/logo-name.png") top left no-repeat;
-    width: 115px;
-    height: 41px;
+    background: #231f1f;
+    width: 114px;
+    height: 39px;
     overflow: hidden;
     text-indent: -9999px;
+    -webkit-mask-image: url("../img/logo-name.svg");
+    mask-image: url("../img/logo-name.svg");
+}
+.copyright-link:hover {
+    background: #81b3d1;
 
 }
+.copyright-link:active {
+    background: #bdbbbb;
 
-
-
+}
 .catalog-title {
     font-weight: bold;
     font-size: 21px;
@@ -265,7 +315,7 @@ a.catalog-item-book {
 }
 
 a.catalog-item-later {
-    background-color: #9ac2db;
+    background-color: #81b3d2;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
@@ -333,8 +383,8 @@ input {
 }
 .modal-form input {
     width: 346px;
-    border: 2px solid #f2f2f2;
-    background-color: #f2f2f2;
+    border: 2px solid #f1f1f1;
+    background-color: #f1f1f1;
     vertical-align: middle;
     box-sizing: border-box;
     text-align: left;
@@ -387,23 +437,46 @@ margin-bottom: 0px;
 }    
 
 
-.minus {
-    display: inline-block;
-    background: url("../img/minus.png") center center no-repeat #f1f1f1;
-    width: 35px;
-    height: 35px;
-    vertical-align: top;
-    font-size: 14px;
-    color: #c2c2c2;
-}
+.minus,
 .plus {
     display: inline-block;
-    background: url("../img/plus.png") center center no-repeat #f1f1f1;
+    background: #f1f1f1;
     width: 35px;
     height: 35px;
     vertical-align: top;
-    font-size: 14px;
-    color: #c2c2c2;
+    position: relative;
+}
+
+.minus span,
+.plus span {
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    width: 11px;
+    height: 3px;
+    background: #a9a9a9;
+}
+.plus span:after {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 11px;
+    position: absolute;
+    left: 4px;
+    top: -4px;
+    background: #a9a9a9;
+}
+.minus:hover span,
+.plus:hover span,
+.plus:hover span:after {
+    background: #000000;
+}
+.minus:active span,
+.plus:active span,
+.plus:active span:after {
+    background: #81b3d2;
+
 }
 .modal-form button.button {
     background: #81b3d1;
@@ -422,4 +495,106 @@ label.children-label {
 }
 .modal-close {
     display: none;
+}
+
+
+
+.catalog-item-later:active { 
+    background: #5495bd;
+    color: #88b5d1;
+}
+.catalog-item-later:hover { 
+    background: #669dc0;
+   /* color: transparent; */ 
+}
+
+.catalog-item-book:active { 
+    background: #503d32;
+    color: #857870;
+}
+
+.catalog-item-book:hover { 
+    background: #604e43;
+}
+
+.catalog a:active h3 { 
+    color: #b2b2b2;
+}
+.catalog h3:hover { 
+    color: #81b3d2;
+    /* color: transparent; */ 
+}
+
+.find-hotel a:hover { 
+    background: #604e43;
+}
+.find-hotel a:active {
+    background:  #503d32;
+    color: #857870;
+}
+
+
+.modal-form input:hover {
+    background: #ebebeb;
+}
+.modal-form input:focus {
+    background: #ffffff;
+    outline: none;
+}
+.minus,
+.plus {
+
+}
+.minus:active,
+.plus:active {
+    color: #000000;
+}
+.minus:hover,
+.plus:hover {
+    color: #81b3d2;
+}
+.icon-calendar {
+    color: #a9a9a9;
+}
+.icon-calendar:active {
+    color: #000000;
+}
+.icon-calendar:hover {
+    color: #81b3d2;
+}
+
+.menu-item .menu-link:hover {
+    color: #c4dcea;
+
+}
+.menu-item .menu-link:active {
+    color: #c7c7c7;
+
+}
+.menu-item .menu-link-active {
+    color: #766357;
+
+}
+.modal-form button.button:hover {
+    background: #669dc0;
+
+}
+.modal-form button.button:active {
+    background: #5495bd;
+    color: #69a2c5;
+
+}
+.icon-calendar {
+    display: inline-block;
+    width: 35px;
+    -webkit-mask: url("../img/calendar.svg") center center no-repeat;
+    mask: url("../img/calendar.svg") center center no-repeat;
+    background:#c9c9c9;
+}
+.icon-calendar:hover {
+    background: #000000;
+}
+.icon-calendar:active {
+    background: #81b3d1;
+
 }
