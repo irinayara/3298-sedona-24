@@ -178,7 +178,7 @@ img.promoblock {
 }
 .fb span {
     -webkit-mask: url("../img/fb-icon.svg") center center no-repeat;
-    mask: url("../img/t.svg") center center no-repeat;
+    mask: url("../img/fb-icon.svg") center center no-repeat;
     background: white;
 
 }
@@ -188,7 +188,7 @@ img.promoblock {
 }
 .yt span {
     -webkit-mask: url("../img/youtube.svg") center center no-repeat;
-    mask: url("../img/t.svg") center center no-repeat;
+    mask: url("../img/youtube.svg") center center no-repeat;
     background: white;
 }
 .yt:active span {
