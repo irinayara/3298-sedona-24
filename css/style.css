@@ -77,7 +77,8 @@ img.promoblock {
     width: 490px;
     text-align: center;
     margin: 0 auto;
-    padding: 50px 0;
+    padding-top: 47px;
+    padding-bottom: 40px;
 }
 .advantages-title {
     font-weight: bold;
@@ -85,12 +86,12 @@ img.promoblock {
     width: 500px;
 }
 .advantages-description {
-    margin-top: 30px;
+    margin-top: 32px;
     font-size: 14px;
 }
 .find-hotel {
     text-align: center;
-    margin: 0 auto;
+    margin-top: 58px;
     text-transform: uppercase;
 }
 .find-hotel a {
@@ -199,8 +200,8 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 
 }
 .copyright {
@@ -597,4 +598,113 @@ label.children-label {
 .icon-calendar:active {
     background: #81b3d1;
 
+}
+.advantage-first {
+    display: flex;
+    height: 253px;
+    align-items: stretch;
+    background: url("../img/shop.jpg") right center no-repeat;
+}
+.advantage-blue {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #81b3d1;
+    color: #ffffff;
+    line-height: 20px;
+    padding-bottom: 13px;
+}
+.advantage-description {
+    width: 320px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.advantage-title {
+    font-weight: bold;
+    font-size: 21px;
+    text-transform: uppercase;
+    width: 160px;
+    line-height: 20px;
+}
+.advantage-number {
+    font-size: 14px;
+    margin-bottom: 7px;
+    margin-top: 1px;
+}
+.advantage-picture {
+    display: flex;
+    height: 253px;
+    align-items: stretch;
+    background: url("../img/canion.jpg") left center no-repeat;
+    justify-content: flex-end;
+
+}
+.icon-advantages {
+    display: flex;
+    justify-content: space-around;
+    height: 318px;
+    align-items: center;
+    text-align: center;
+
+}
+.advantage-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 57px 51px 68px 51px;
+
+}
+
+.advantage-icon-title {
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 26px;
+    margin-bottom: 7px;
+}
+.advantage-icon-description {
+    font-size: 14px;
+    line-height: 20px;
+}
+.advantage-icon-home {
+    background: url("../img/icon-1.png") center center no-repeat;
+    background-size: 96%;
+    height: 72px;
+    width: 75px;
+}
+.advantage-icon-food {
+    background: url("../img/icon-2.png") center center no-repeat;
+    background-size: 96%;
+    height: 70px;
+    width: 74px;
+}
+.advantage-icon-souvenirs {
+    background: url("../img/icon-3.png") center center no-repeat;
+    background-size: 96%;
+    height: 76px;
+    width: 64px;
+}
+.advantage-greys {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    align-items: center;
+    text-align: center;
+    background: #eeeeee;
+}
+.advantage-grey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.advantage-grey-first {
+    padding-bottom: 18px;
+}
+.map {
+    background: url("../img/map.jpg") center center no-repeat;
+    height: 470px;
 }
