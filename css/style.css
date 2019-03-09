@@ -888,6 +888,10 @@ label.children-label {
   .housetype input[type=checkbox]:checked + label:before {
     background: url("../img/checkbox-on.svg") left center no-repeat;
   }
+  .service input[type=checkbox]:disabled + label:before,
+  .housetype input[type=checkbox]:disabled + label:before {
+    opacity: 0.5;
+  }
   .service ul,
   .housetype ul {
       padding: 0;
@@ -922,10 +926,16 @@ label.children-label {
       margin-left: 35px;
 
   }
-  .filters-a:active {
+  .active,
+  .filters-a:hover {
       color: #81b3d2;
       text-decoration: none;
   }
+  .filters-a:active {
+      color: #707070;
+      border-bottom: none;
+  }
+
 
   .filters-sorting-direction {
     display: flex;
@@ -933,18 +943,47 @@ label.children-label {
     margin-right: 70px;
 
   }
+ 
   .filters-up {
-    background: url("../img/icon-up-dir.png") center center no-repeat;
+    -webkit-mask: url("../img/icon-up-dir.svg") center center no-repeat;
+    mask: url("../img/icon-up-dir.svg") center center no-repeat;
     width: 11px;
     height: 10px;
     overflow: hidden;
     text-indent: -9999px;
+    margin-right: 10px;
+    background: #c9c9c9;
 
   }
+  .filters-up:hover {
+    -webkit-mask: url("../img/icon-up-dir.svg") center center no-repeat;
+    mask: url("../img/icon-up-dir.svg") center center no-repeat;
+    background: #231f20;
+  }
+  .filters-up:active {
+    -webkit-mask: url("../img/icon-up-dir.svg") center center no-repeat;
+    mask: url("../img/icon-up-dir.svg") center center no-repeat;
+    background: #81b3d1;
+  }
+
   .filters-down {
-    background: url("../img/icon-down-dir.png") center center no-repeat;
+    -webkit-mask: url("../img/icon-down-dir.svg") center center no-repeat;
+    mask: url("../img/icon-down-dir.svg") center center no-repeat;
     width: 11px;
     height: 10px;
     overflow: hidden;
     text-indent: -9999px;
+    background: #c9c9c9;
+  }
+   
+  .filters-down:hover {
+    -webkit-mask: url("../img/icon-down-dir.svg") center center no-repeat;
+    mask: url("../img/icon-down-dir.svg") center center no-repeat;
+    background: #231f20;
+  }
+  .down-active,
+  .filters-down:active {
+    -webkit-mask: url("../img/icon-down-dir.svg") center center no-repeat;
+    mask: url("../img/icon-down-dir.svg") center center no-repeat;
+    background: #81b3d1;
   }
