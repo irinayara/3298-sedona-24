@@ -32,6 +32,7 @@ a {
     box-sizing: border-box;
     padding-top: 15px;
     padding-bottom: 15px;
+    
 }
 .menu-item:nth-child(1) {
     padding-left: 72px;
@@ -56,7 +57,7 @@ a {
 }
 
 
-img.promoblock {
+img.logo {
     position: absolute;
     top: 0;
     margin-left: 50%;
@@ -94,7 +95,7 @@ img.promoblock {
     margin-top: 58px;
     text-transform: uppercase;
 }
-.find-hotel a {
+.find-hotel button {
     width: 568px;
     display: inline-block;
     vertical-align: top;
