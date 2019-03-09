@@ -34,6 +34,8 @@
         <main>
             <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
 
+            <section class="main-filters">
+
             <div class="service">
 
             <form class="filter-service" method="get" action="#">
@@ -62,17 +64,27 @@
                 </form>
             </div>
 
+            <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
+              </div>
+
+            </section>
 
 
-            <div class="houseprice">
-                <label for="houseprice-input">Стоимость в сутки</label>
-                <div>От 0</div> 
-                <div>до 3000</div>
 
-                0 <input type="range" id="houseprice-input" min="0" max="3000"> 3000
-
-                <button type="submit" class="filter-houseprice-button button">Показать</button>
-            </div>
+        <section class="line-filters">
 
             <section class="filters">
                 <h2>Найдено: 3</h2>
@@ -80,16 +92,18 @@
 
             <section class="filters-sorting">
                 <p>Сортировка</p>
-                <a class="filters-sorting" href="#">По цене</a>
-                <a class="filters-sorting" href="#">По типу</a>
-                <a class="filters-sorting" href="#">По рейтингу</a>
+                <a class="filters-a" href="#">По цене</a>
+                <a class="filters-a" href="#">По типу</a>
+                <a class="filters-a" href="#">По рейтингу</a>
             </section>
 
             <section class="filters-sorting-direction">
-                <a class="up" href="#">Вверх</a>
-                <a class="down" href="#">Вниз</a>
+                <a class="filters-up" href="#">Вверх</a>
+                <a class="filters-down" href="#">Вниз</a>
 
             </section>
+
+        </section>
 
             <section class="catalog">
                 <h2 class="visually-hidden">Список отелей</h2>

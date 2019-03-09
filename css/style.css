@@ -708,3 +708,243 @@ label.children-label {
     background: url("../img/map.jpg") center center no-repeat;
     height: 470px;
 }
+
+
+.filter-range {
+    width: 330px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-left: 250px;
+  }
+  
+  .filter-range-title {
+    margin-bottom: 9px;
+  
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  
+  .price-controls {
+    position: relative;
+    
+    height: 36px;
+    margin-bottom: 20px;
+    
+    font-size: 0;
+  
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+  }
+  
+  .price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    width: 2px;
+    height: 22px;
+  
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+  
+  .price-controls label {
+    display: inline-block;
+  
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+  
+    cursor: pointer;
+  }
+  
+  .price-controls .min-price,
+  .price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+  }
+  
+  .price-controls input {
+    width: 50px;
+    margin: 0;
+  
+    color: inherit;
+    font: inherit;
+  
+    background: none;
+    border: none;
+  }
+  
+  .range-controls {
+    position: relative;
+  
+    margin-bottom: 32px;
+  }
+  
+  .range-controls .scale {
+    height: 2px;
+  
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .range-controls .bar {
+    width: 80%;
+    height: 2px;
+  
+    background: #ffffff;
+  }
+  
+  .range-toggle {
+    position: absolute;
+    top: -9px;
+    
+    width: 4px;
+    height: 4px;
+  
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+  }
+  
+  .range-toggle:hover {
+    background: #1c4f80;
+  }
+  
+  .range-toggle-min {
+    left: 0;
+  }
+  
+  .range-toggle-max {
+    left: 80%;
+  }
+  
+  .btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+  
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+  
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .btn-transparent:hover {
+    color: #000000;
+  
+    background: #ffffff;
+  }
+
+  .main-filters {
+    background: url("../img/filter-background.jpg") center -50px no-repeat;
+    display: flex;
+    color: #ffffff;
+    height: 215px;
+  }
+  .service li,
+  .housetype li {
+      margin: 22px 0;
+      list-style-type: none;
+      font-size: 14px;
+
+  }
+  .service,
+  .housetype {
+    margin: 25px;
+    margin-left: 70px;
+    
+  }
+  .service label,
+  .housetype label {
+      font-size: 16px bold;
+
+  }
+  
+  fieldset {
+      border: none;
+  }
+  .service label:before,
+  .housetype label:before {
+      content: "";
+      display: inline-block;
+      width: 27px;
+      height: 23px;
+      background: url("../img/checkbox-off.svg") left center no-repeat;
+      vertical-align: middle;
+      margin-right: 15px;
+    
+  }
+  .service input[type=checkbox]:checked + label:before,
+  .housetype input[type=checkbox]:checked + label:before {
+    background: url("../img/checkbox-on.svg") left center no-repeat;
+  }
+  .service ul,
+  .housetype ul {
+      padding: 0;
+  }
+
+
+  .line-filters {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+  }
+  .filters {
+      font-size: 21 bold;
+      margin-left: 70px;
+  }
+  .filters-sorting {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 30px;
+    flex-grow: 2;
+    justify-content: flex-start;
+
+  }
+  .filters-a {
+      font-size: 12px;
+      color: #d1d1d1;
+      text-decoration: none;
+      border-bottom: 1px dotted #81b3d1;
+      margin-left: 35px;
+
+  }
+  .filters-a:active {
+      color: #81b3d2;
+      text-decoration: none;
+  }
+
+  .filters-sorting-direction {
+    display: flex;
+    float: right;
+    margin-right: 70px;
+
+  }
+  .filters-up {
+    background: url("../img/icon-up-dir.png") center center no-repeat;
+    width: 11px;
+    height: 10px;
+    overflow: hidden;
+    text-indent: -9999px;
+
+  }
+  .filters-down {
+    background: url("../img/icon-down-dir.png") center center no-repeat;
+    width: 11px;
+    height: 10px;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
