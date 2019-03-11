@@ -17,20 +17,24 @@ a {
     text-decoration: none;
 }
 
+.main-header {
+    height: 53px;
 
+}
 .menu-list {
     display: flex;
     margin: 0;
     list-style-type: none;
     padding: 0;
     justify-content: space-around;
+
 }
 .menu-item {
     text-transform: uppercase;
     vertical-align: top;
     width: 265px;
     box-sizing: border-box;
-    padding-top: 15px;
+    padding-top: 16px;
     padding-bottom: 15px;
     
 }
@@ -39,12 +43,16 @@ a {
     text-align: left;
 }
 .menu-item:nth-child(2) {
-    margin-right: 239px;
+    margin-right: 168px;
     text-align: center;
+    letter-spacing: 0.47px;
+
 }
 .menu-item:nth-child(3) {
-    margin-left: 29px;
+    margin-left: 78px;
     text-align: center;
+    letter-spacing: 0.47px;
+
 }
 .menu-item:nth-child(4) {
     padding-right: 72px;
@@ -59,45 +67,53 @@ a {
 
 img.logo {
     position: absolute;
-    top: 0;
+    top: -4px;
     margin-left: 50%;
     left: -70px;
     z-index: 10;
 
 }
 .intro-index {
-    background: url("../img/mask.png") center bottom no-repeat, url("../img/welcome.png") center center no-repeat, url("../img/background-photo.jpg") center top no-repeat;
-    height: 510px;
+    background: url("../img/mask.png") center bottom no-repeat,
+    url("../img/welcome.png") center 70px no-repeat,
+    url("../img/background-photo.jpg") center -57px no-repeat;
+    height: 509px;
 }
 .visually-hidden {
     display: none;
 }
 .advantages-header {
     text-transform: uppercase;
-  
-    width: 490px;
+    width: 560px;
     text-align: center;
     margin: 0 auto;
-    padding-top: 47px;
-    padding-bottom: 40px;
+    padding-top: 44px;
+    padding-bottom: 39px;
 }
 .advantages-title {
     font-weight: bold;
     font-size: 21px;
-    width: 500px;
+    line-height: 26px;
+    letter-spacing: 0.16px;
+
 }
 .advantages-description {
-    margin-top: 32px;
+    margin-top: 33px;
     font-size: 14px;
+    color: #333333;
+    line-height: 16.1px;
+
+    
 }
 .find-hotel {
     text-align: center;
-    margin-top: 58px;
+    margin-top: 50px;
     text-transform: uppercase;
 }
 .find-hotel button {
     width: 568px;
     display: inline-block;
+    text-transform: uppercase;
     vertical-align: top;
     box-sizing: border-box;
     padding: 30px 0px;
@@ -108,23 +124,21 @@ img.logo {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    margin-top: 48px;
+    margin-top: 42px;
 }
 .find-hotel-title {
     font-weight: bold;
     font-size: 30px;
+    line-height: 34.5px;
 }
 .find-hotel-description {
     font-size: 14px;
-    line-height: 1.8;
+    line-height: 25.2px;
     text-align: center;
     width: 500px;
     margin: 0 auto;
 
 }
-
-
-
 
 
 .hashtag, 
@@ -137,12 +151,13 @@ img.logo {
     text-transform: uppercase;
     width: 33%;
     justify-content: center;
+    line-height: 24.15px;
 
 }
 .social-btn {
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 47px;
+    height: 47px;
     background: #81b3d1;
 
 }
@@ -154,8 +169,9 @@ img.logo {
 }
 .social-btn span {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    vertical-align: middle;
+    width: 47px;
+    height: 47px;
     overflow: hidden;
     text-indent: -9999px;
 
@@ -201,8 +217,8 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
 }
 .copyright {
@@ -211,6 +227,8 @@ footer {
 .copyright-done {
     font-size: 14px;
     padding-right: 5px;
+    font-weight: 700;
+    line-height: 16.1px;
 }
 .copyright-link {
     background: #231f1f;
@@ -234,6 +252,7 @@ footer {
     font-size: 21px;
     text-transform: uppercase;
     align-items: flex-start;
+    line-height: 24.15px;
 }
 .catalog-item {
     display: flex;
@@ -246,6 +265,8 @@ footer {
 .catalog-item-housetype {
     font-size: 14px;
     text-transform: uppercase;
+    line-height: 16.1px;
+    color: #c9c9c9;
 }
 .catalog-item-houseprice {
     font-size: 14px;    
@@ -262,7 +283,8 @@ footer {
     background-color: #f1f1f1;    
     padding: 10px 10px;
     margin-bottom: 11px;
-
+    color: #666666;
+    line-height: 16.1px;
 
 }
 .catalog-list {
@@ -313,6 +335,7 @@ a.catalog-item-book {
 .catalog-button {
     display: flex;
     margin-top: 0;
+    line-height: 16.1px;
 
 }
 
@@ -359,7 +382,7 @@ a.catalog-item-book {
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 568px;
-    padding: 61px 55px 55px;
+    padding: 53px 55px 55px;
     background-color: #ffffff;
     font-size: 0px;
     line-height: 26px;
@@ -379,10 +402,7 @@ a.catalog-item-book {
     font-size: 14px;
     position: relative;
 }
-button, 
-input {
-    overflow: visible;
-}
+
 .modal-form input {
     width: 346px;
     border: 2px solid #f1f1f1;
@@ -409,7 +429,10 @@ input {
 
 .full-width {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
+}
+.full-width label {
+    letter-spacing: 0.5px;
 }
 
 .grownup,
@@ -431,7 +454,7 @@ input {
 
 .grownup input,
 .children input {
-width: 47px;
+width: 44px;
 text-align: center;
 box-sizing: border-box;
 padding: 7px 0 8px;
@@ -442,6 +465,7 @@ margin-bottom: 0px;
 .minus,
 .plus {
     display: inline-block;
+    vertical-align: middle;
     background: #f1f1f1;
     width: 35px;
     height: 35px;
@@ -452,6 +476,7 @@ margin-bottom: 0px;
 .minus span,
 .plus span {
     display: inline-block;
+    vertical-align: middle;
     position: absolute;
     left: 12px;
     top: 16px;
@@ -462,6 +487,7 @@ margin-bottom: 0px;
 .plus span:after {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     width: 3px;
     height: 11px;
     position: absolute;
@@ -484,13 +510,13 @@ margin-bottom: 0px;
     background: #81b3d1;
     display: block;
     width: 456px;
-    height: 55px;
+    height: 58px;
     font-weight: bold;
     font-size: 21px;
     text-transform: uppercase;
     color: #ffffff;
     border: none;
-    margin-top: 50px;
+    margin-top: 54px;
 }
 label.children-label {
     width: 60px;
@@ -588,6 +614,7 @@ label.children-label {
 }
 .icon-calendar {
     display: inline-block;
+    vertical-align: middle;
     width: 35px;
     -webkit-mask: url("../img/calendar.svg") center center no-repeat;
     mask: url("../img/calendar.svg") center center no-repeat;
@@ -602,7 +629,7 @@ label.children-label {
 }
 .advantage-first {
     display: flex;
-    height: 253px;
+    height: 256px;
     align-items: stretch;
     background: url("../img/shop.jpg") right center no-repeat;
 }
@@ -616,7 +643,7 @@ label.children-label {
     background-color: #81b3d1;
     color: #ffffff;
     line-height: 20px;
-    padding-bottom: 13px;
+    padding-bottom: 14px;
 }
 .advantage-description {
     width: 320px;
@@ -632,12 +659,12 @@ label.children-label {
 }
 .advantage-number {
     font-size: 14px;
-    margin-bottom: 7px;
-    margin-top: 1px;
+    margin-bottom: 6px;
+    margin-top: 5px;
 }
 .advantage-picture {
     display: flex;
-    height: 253px;
+    height: 257px;
     align-items: stretch;
     background: url("../img/canion.jpg") left center no-repeat;
     justify-content: flex-end;
@@ -645,10 +672,12 @@ label.children-label {
 }
 .icon-advantages {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    height: 318px;
+    height: 329.97px;
     align-items: center;
     text-align: center;
+ 
 
 }
 .advantage-icon {
@@ -657,56 +686,61 @@ label.children-label {
     align-items: center;
     justify-content: center;
     padding: 57px 51px 68px 51px;
-
+    box-sizing: border-box;
+    max-width: 33%;
 }
 
 .advantage-icon-title {
     font-weight: bold;
     font-size: 21px;
-    margin-top: 26px;
-    margin-bottom: 7px;
+    margin-top: 29px;
+    margin-bottom: 10px;
 }
 .advantage-icon-description {
     font-size: 14px;
     line-height: 20px;
+    color: #333333;
 }
 .advantage-icon-home {
     background: url("../img/icon-1.png") center center no-repeat;
-    background-size: 96%;
     height: 72px;
     width: 75px;
+    line-height: 24.15px;
+
 }
 .advantage-icon-food {
     background: url("../img/icon-2.png") center center no-repeat;
-    background-size: 96%;
     height: 70px;
     width: 74px;
 }
 .advantage-icon-souvenirs {
     background: url("../img/icon-3.png") center center no-repeat;
-    background-size: 96%;
     height: 76px;
     width: 64px;
 }
 .advantage-greys {
     display: flex;
     justify-content: space-around;
-    height: 250px;
     align-items: center;
     text-align: center;
     background: #eeeeee;
+
 }
+
 .advantage-grey {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 257px;
     justify-content: center;
+    box-sizing: border-box;
+    max-width: 33%;
 }
 .advantage-grey-first {
     padding-bottom: 18px;
 }
 .map {
-    background: url("../img/map.jpg") center center no-repeat;
+    background: url("../img/map.jpg") center bottom -124px no-repeat;
     height: 470px;
 }
 
@@ -754,7 +788,6 @@ label.children-label {
   
   .price-controls label {
     display: inline-block;
-  
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
