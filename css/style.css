@@ -18,7 +18,8 @@ a {
 }
 
 .main-header {
-    height: 53px;
+    height: 55px;
+    padding: 0px;
 
 }
 .menu-list {
@@ -26,6 +27,7 @@ a {
     margin: 0;
     list-style-type: none;
     padding: 0;
+    padding-top: 3px;
     justify-content: space-around;
 
 }
@@ -67,7 +69,7 @@ a {
 
 img.logo {
     position: absolute;
-    top: -4px;
+    top: -3px;
     margin-left: 50%;
     left: -70px;
     z-index: 10;
@@ -217,7 +219,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 40px;
 
 }
@@ -256,21 +258,31 @@ footer {
 }
 .catalog-item {
     display: flex;
-    border-bottom: 1px solid #e5e5e5;
-    padding: 17px 0;
-    padding-top: 24px;
+    border-bottom: 0.5px solid #e5e5e5;
+    border-top: 0.5px solid #81b3d1;
+    padding: 19px 0;
+    padding-top: 22px;
     justify-content: space-between;
 
 }
+.catalog-item-first {
+    padding-top: 25px;
+}
+
 .catalog-item-housetype {
+   
     font-size: 14px;
     text-transform: uppercase;
     line-height: 16.1px;
     color: #c9c9c9;
+    width: 115px;
+
 }
+
 .catalog-item-houseprice {
     font-size: 14px;    
-    padding-left: 30px;
+    width: 70px;
+
 }
 .catalog-item-button {
     font-weight: bold;
@@ -281,15 +293,17 @@ footer {
     font-size: 14px;
     text-transform: uppercase;
     background-color: #f1f1f1;    
-    padding: 10px 10px;
-    margin-bottom: 11px;
+    padding: 8px 12px 8px 10px;
+    margin-bottom: 12px;
     color: #666666;
     line-height: 16.1px;
+    width: 92px;
 
 }
 .catalog-list {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 .catalog-item-image,
 .catalog-item-description,
@@ -300,8 +314,8 @@ footer {
 
 .catalog-item-image {
     padding-top: 5px;
-    padding-left: 70px;
-    padding-right: 30px;
+    padding-left: 71px;
+    padding-right: 31px;
 }
 .catalog-item-description {
     flex-grow: 2;
@@ -345,7 +359,7 @@ a.catalog-item-later {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
-    padding: 5px 15px;
+    padding: 5px 17px;
     justify-content: flex-start;
     margin-right: 5px;
 
@@ -356,17 +370,19 @@ a.catalog-item-book {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
-    padding: 5px 15px;
+    padding: 5px 17px;
     justify-content: flex-end;
 
 }
 .catalog-item-house {
+    display: flex;
+    flex-wrap: nowrap;
     margin-top: 9px;
     margin-bottom: 18px;
 }
 .star {
     background: url("../img/star.png") center center no-repeat;
-    width: 18px;
+    width: 23px;
     height: 17px;
     display: flex;
 }
@@ -382,7 +398,7 @@ a.catalog-item-book {
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 568px;
-    padding: 53px 55px 55px;
+    padding: 55px 55px 55px;
     background-color: #ffffff;
     font-size: 0px;
     line-height: 26px;
@@ -741,16 +757,17 @@ label.children-label {
 }
 .map {
     background: url("../img/map.jpg") center bottom -124px no-repeat;
-    height: 470px;
+    height: 472px;
+    margin-bottom: 10px;
 }
 
 
 .filter-range {
-    width: 330px;
+    width: 320px;
     color: #ffffff;
     text-transform: uppercase;
-    margin-top: 25px;
-    margin-left: 250px;
+    margin-top: 29px;
+    margin-left: 310px;
   }
   
   .filter-range-title {
@@ -860,7 +877,7 @@ label.children-label {
   .btn-transparent {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 6px 33px;
   
     font-size: 14px;
     line-height: 20px;
@@ -883,19 +900,25 @@ label.children-label {
     background: url("../img/filter-background.jpg") center -50px no-repeat;
     display: flex;
     color: #ffffff;
-    height: 215px;
+    height: 222px;
   }
   .service li,
   .housetype li {
-      margin: 22px 0;
+      margin: 23px 0;
       list-style-type: none;
       font-size: 14px;
 
   }
-  .service,
+  .service {
+    margin: 23px;
+    margin-top: 29px;
+    margin-left: 58px;
+    
+  }
   .housetype {
-    margin: 25px;
-    margin-left: 70px;
+    margin: 23px;
+    margin-top: 29px;
+    margin-left: 72px;
     
   }
   .service label,
@@ -937,27 +960,36 @@ label.children-label {
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    height: 82px;
+    vertical-align: middle;
 
   }
   .filters {
-      font-size: 21 bold;
-      margin-left: 70px;
+      margin-left: 72px;
   }
+  .filters h2 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
   .filters-sorting {
     display: flex;
     align-items: center;
     font-size: 12px;
-    margin-left: 30px;
+    margin-left: 49px;
     flex-grow: 2;
     justify-content: flex-start;
 
+  }
+  .filters-sorting p {
+      margin-right: 13px;
   }
   .filters-a {
       font-size: 12px;
       color: #d1d1d1;
       text-decoration: none;
       border-bottom: 1px dotted #81b3d1;
-      margin-left: 35px;
+      margin-left: 30px;
 
   }
   .active,
@@ -974,7 +1006,7 @@ label.children-label {
   .filters-sorting-direction {
     display: flex;
     float: right;
-    margin-right: 70px;
+    margin-right: 74px;
 
   }
  
