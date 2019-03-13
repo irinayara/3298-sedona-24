@@ -5,7 +5,7 @@
     <title>Личный проект Седона</title>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&suset=cyrillic">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
   </head>
   <body>
@@ -14,10 +14,10 @@
       <header class="main-header">
         <nav class="menu menu-opened">
           <ul class="menu-list">
-            <li class="menu-item"><a href="#" class="menu-link">Информация</a></li><!--
+            <li class="menu-item"><a href="index.html" class="menu-link">Информация</a></li><!--
             --><li class="menu-item"><a href="#" class="menu-link">Фото и видео</a></li><!--
             --><li class="menu-item"><a href="#" class="menu-link">Карта штата</a></li><!--
-            --><li class="menu-item"><a href="catalog.html" class="menu-link">Гостиницы</a></li>
+            --><li class="menu-item"><a href="catalog.html" class="menu-link menu-link-active">Гостиницы</a></li>
 
           </ul>
         </nav>
@@ -33,12 +33,14 @@
 
         <main>
             <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
+            
+            
+              <form class="main-filters">
 
-            <section class="main-filters">
+
 
             <div class="service">
-
-            <form class="filter-service" method="get" action="#">
+            <div class="filter-service" method="get" action="#">
             <fieldset>
               <legend>Инфраструктура</legend>
               <ul>
@@ -47,12 +49,12 @@
                 <li class="filter-service-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Wi-Fi" id="Wi-Fi"><label for="Wi-Fi" >Wi-Fi</label></li>
               </ul>
               </fieldset>
-              </form>
+            </div>
             </div>
 
             <div class="housetype">
 
-                <form class="filter-housetype" method="get" action="#">
+                <div class="filter-housetype" method="get" action="#">
                 <fieldset>
                 <legend>Тип жилья</legend>
                 <ul>
@@ -61,7 +63,7 @@
                     <li class="filter-housetype-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="apartment" checked><label for="apartment" >Апартаменты</label></li>
                 </ul>
                 </fieldset>
-                </form>
+              </div>
             </div>
 
             <div class="filter-range">
@@ -79,8 +81,9 @@
                 </div>
                 <button class="btn-transparent" type="submit">Показать</button>
               </div>
+           
+            </form>
 
-            </section>
 
 
 
